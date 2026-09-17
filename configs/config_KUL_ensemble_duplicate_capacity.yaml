@@ -1,0 +1,9 @@
+defaults:
+  - config_KUL_ensemble_attended_inbatch
+  - _self_
+
+# Dual-AA/Dual-BB capacity control: same frozen branch checkpoint twice,
+# random Stage-2 initialization, uniform fixed weights.
+allow_duplicate_branches: true
+reliability_mode: uniform
+torch_num_threads: 1

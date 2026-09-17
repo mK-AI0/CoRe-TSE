@@ -1,0 +1,13 @@
+defaults:
+  - config_KUL
+  - _self_
+
+# Paper Section 5.4.1: In-batch (All speakers).  Stage 2 is not part of
+# this ablation; the reported outcome is Stage-1 cross-trial selection accuracy.
+run_stage2: false
+# HDF5 files are opened independently by worker processes in datasets.py.
+# This setting is scoped to the new ablation and leaves baseline configs intact.
+num_workers: 8
+dataloader_prefetch_factor: 2
+stage1:
+  negative_mode: in_batch

@@ -1,0 +1,5 @@
+# CoRe-TSE: independently pretrained A and B branches, fixed equal fusion.
+name: core_tse
+branches: [attended_same_trial, in_batch]
+feature_fusion: concat
+margin_fusion: equal_weight

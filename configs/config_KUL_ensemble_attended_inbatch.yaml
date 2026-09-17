@@ -1,0 +1,9 @@
+defaults:
+  - config_KUL
+  - _self_
+
+# Isolated Stage-2 ensemble; supplied by the launcher for each fold.
+attended_stage1_path: null
+inbatch_stage1_path: null
+num_workers: 8
+dataloader_prefetch_factor: 2

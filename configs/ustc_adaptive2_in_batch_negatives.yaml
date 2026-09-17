@@ -1,0 +1,26 @@
+# Ablation: standard global in-batch negatives; all other settings match TRUST-USTC.
+seed: 777
+sample_rate: 16000
+num_workers: 0
+clip_grad_norm: 5.0
+patience: 10
+confidence_scale: 5.0
+stage1_negative_mode: in_batch
+
+extractor:
+  N: 256
+  L: 20
+  B: 64
+  H: 128
+  K: 100
+  R: 6
+
+stage1_lr: 0.0005
+stage1_epochs: 50
+trials_per_batch: 4
+windows_per_trial: 8
+stage1_eval_batch_size: 32
+
+stage2_lr: 0.0003
+stage2_epochs: 100
+stage2_batch_size: 8

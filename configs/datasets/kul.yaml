@@ -1,0 +1,8 @@
+# KUL strict cross-trial protocol. Fill these paths locally before running.
+dataset: KUL
+metadata_path: null
+audio_dir: null
+eeg_dir: null
+audio_sr: 8000
+eeg_sr: 128
+subject_ids: null

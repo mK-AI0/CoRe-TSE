@@ -1,0 +1,8 @@
+# DTU strict cross-trial protocol. Fill these paths locally before running.
+dataset: DTU
+metadata_path: null
+audio_dir: null
+eeg_dir: null
+audio_sr: 8000
+eeg_sr: 64
+subject_ids: null

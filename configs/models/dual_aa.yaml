@@ -1,0 +1,5 @@
+name: dual_aa
+branches: [attended_same_trial, attended_same_trial]
+feature_fusion: concat
+margin_fusion: equal_weight
+allow_duplicate_branches: true

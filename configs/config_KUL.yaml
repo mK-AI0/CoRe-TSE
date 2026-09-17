@@ -1,0 +1,53 @@
+defaults:
+  - _self_
+  - override hydra/job_logging: disabled
+
+hydra:
+  run:
+    dir: .
+  output_subdir: null
+
+# Log
+seed: 777
+run_stage2: true
+
+# dataset
+log_dir: ./outputs/KUL
+# Set these three paths on your own machine.  No dataset path is bundled.
+metadata_path: null
+audio_dir: null
+eeg_dir: null
+audio_sr: 8000
+eeg_sr: 128
+subject_ids: null
+
+# dataloader
+num_workers: 0
+
+# network settings
+extractor:
+  N: 256
+  L: 20
+  B: 64
+  H: 128
+  K: 100
+  R: 6
+
+# optimizer
+train_from_last_checkpoint: false
+clip_grad_norm: 5
+
+stage1:
+  # Original TRUST-TSE: non-aligned attended windows from the same trial.
+  negative_mode: attended_same_trial
+  init_lr: 0.0005
+  max_epoch: 50
+  trials_per_batch: 8
+  windows_per_trial: 8
+  min_gap_sec: 2.0
+
+stage2:
+  ign_aug_prob: 0.5
+  init_lr: 0.0003
+  max_epoch: 100
+  batch_size: 8

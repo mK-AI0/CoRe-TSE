@@ -1,0 +1,4 @@
+# USTC subject-adaptive protocol. Fill this path locally before running.
+dataset: USTC
+data_dir: null
+sample_rate: 16000

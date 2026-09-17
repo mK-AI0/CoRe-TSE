@@ -1,0 +1,4 @@
+name: shared_ab
+branches: [attended_same_trial, in_batch]
+stage1_mode: dual_loss_same_batch
+feature_fusion: single_encoder

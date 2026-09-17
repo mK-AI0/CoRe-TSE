@@ -1,0 +1,25 @@
+# Two frozen Stage-1 branches: attended_same_trial + in_batch. Stage-2 settings match TRUST-USTC.
+seed: 777
+sample_rate: 16000
+num_workers: 4
+prefetch_factor: 2
+torch_num_threads: 1
+torch_num_interop_threads: 1
+clip_grad_norm: 5.0
+patience: 10
+confidence_scale: 5.0
+stage1_eval_batch_size: 32
+trials_per_batch: 4
+windows_per_trial: 8
+
+extractor:
+  N: 256
+  L: 20
+  B: 64
+  H: 128
+  K: 100
+  R: 6
+
+stage2_lr: 0.0003
+stage2_epochs: 100
+stage2_batch_size: 8

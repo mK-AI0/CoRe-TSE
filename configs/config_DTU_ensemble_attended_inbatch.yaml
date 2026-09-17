@@ -1,0 +1,15 @@
+defaults:
+  - config_DTU
+  - _self_
+
+# Isolated Stage-2 equal-weight dual-encoder ensemble. Paths are provided by
+# the launcher for each cross-trial fold.
+attended_stage1_path: null
+inbatch_stage1_path: null
+
+# Four DTU folds run concurrently.  Each worker opens HDF5 lazily (see
+# datasets.py), while the parent keeps one CPU compute thread to prevent four
+# PyTorch pools from oversubscribing the host during Stage-1 evaluation.
+num_workers: 4
+dataloader_prefetch_factor: 2
+torch_num_threads: 1

@@ -1,0 +1,3 @@
+# Diagnostic control in Li_ICASSP.pdf: synchronized ignored-speech negatives.
+name: single_c
+branches: [synchronous_unattended]

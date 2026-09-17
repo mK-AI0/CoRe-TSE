@@ -1,0 +1,29 @@
+# User-provided datasets and derived data
+data/*
+!data/README.md
+*.h5
+*.hdf5
+*.mat
+*.wav
+*.flac
+*.npz
+
+# Experiment artefacts
+outputs/
+logs/
+checkpoints/
+tensorboard/
+*.ckpt
+*.pth
+*.pt
+*.log
+*.csv
+*.json
+
+# Python and editor files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+.idea/
+.vscode/

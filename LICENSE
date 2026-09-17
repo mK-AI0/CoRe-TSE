@@ -1,35 +1,14 @@
-TRUST-TSE
-Copyright 2026 Wonchul Shin, Inyong Choi, and Kyogu Lee
-(Seoul National University; University of Iowa)
+CORE-TSE
+Copyright 2026 mK-AI0
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this work except in compliance with the License.
-The full text of the License is reproduced below.
+The original code and modifications authored for CORE-TSE are licensed under
+the Apache License, Version 2.0. You may not use this file except in
+compliance with the License. The full license text follows.
 
-------------------------------------------------------------------------
-Third-party attribution
-------------------------------------------------------------------------
-
-This repository includes code adapted from ClearerVoice-Studio
-(https://github.com/modelscope/ClearerVoice-Studio), specifically the
-NeuroHeed implementation under train/target_speaker_extraction
-(Sub-Task 4: Neuro-steered Speaker Extraction Conditioned on EEG Signals).
-ClearerVoice-Studio is developed by the Speech Lab of the Institute for
-Intelligent Computing, Alibaba Group, and is licensed under the Apache
-License, Version 2.0:
-
-  Copyright (c) Alibaba Group
-
-Files adapted from that codebase carry a notice indicating the
-modifications made in this work. NeuroHeed is described in:
-  Z. Pan, M. Borsdorf, S. Cai, T. Schultz, and H. Li,
-  "NeuroHeed: Neuro-steered speaker extraction using EEG signals,"
-  IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2024.
-
-ClearerVoice-Studio itself incorporates third-party code from other
-open-source projects, including SpeechBrain, ESPnet, and TalkNet-ASD.
-Refer to the ClearerVoice-Studio repository for the corresponding
-attributions.
+This repository contains adapted components originating from BASE-USTC,
+TRUST-TSE, and ClearerVoice-Studio. Their existing source-file notices remain
+in place. Attribution and upstream-license information is provided in NOTICE.
+Nothing in this LICENSE transfers ownership of those upstream components.
 
 ========================================================================
 

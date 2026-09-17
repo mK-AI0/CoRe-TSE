@@ -2,7 +2,7 @@
 # (https://github.com/modelscope/ClearerVoice-Studio),
 # licensed under the Apache License 2.0.
 # Original work Copyright (c) Alibaba Group.
-# Modifications Copyright (c) 2026 <your name / institution>.
+# CORE-TSE modifications Copyright (c) 2026 mK-AI0.
 
 
 import torch

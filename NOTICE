@@ -1,0 +1,17 @@
+CORE-TSE
+Copyright 2026 mK-AI0
+
+This product includes original CORE-TSE code and modifications by mK-AI0.
+
+Portions of the implementation were adapted from BASE-USTC and TRUST-TSE.
+Those projects remain the property of their respective authors and are used
+subject to their applicable licenses and notices.
+
+The extractor-related modules and metric helpers include code adapted from
+ClearerVoice-Studio (https://github.com/modelscope/ClearerVoice-Studio),
+developed by the Speech Lab of the Institute for Intelligent Computing,
+Alibaba Group, and licensed under Apache License 2.0. The corresponding
+source-file headers are retained.
+
+ClearerVoice-Studio may itself include additional third-party components.
+Refer to its upstream repository for the applicable notices and licenses.
